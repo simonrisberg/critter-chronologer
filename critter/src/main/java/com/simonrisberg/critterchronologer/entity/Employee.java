@@ -1,19 +1,25 @@
-package com.simonrisberg.critterchronologer.dto;
+package com.simonrisberg.critterchronologer.entity;
 
-import com.simonrisberg.critterchronologer.entity.EmployeeSkill;
-
+import javax.persistence.*;
 import java.time.DayOfWeek;
+import java.util.HashSet;
 import java.util.Set;
 
-/**
- * Represents the form that employee request and response data takes. Does not map
- * to the database directly.
- */
-public class EmployeeDTO {
+@Entity
+@Table(name = "employee")
+public class Employee {
+
+    @Id
+    @GeneratedValue
     private long id;
+
     private String name;
-    private Set<EmployeeSkill> skills;
-    private Set<DayOfWeek> daysAvailable;
+
+    @ElementCollection
+    private Set<EmployeeSkill> skills = new HashSet<>();
+
+    @ElementCollection
+    private Set<DayOfWeek> daysAvailable = new HashSet<>();
 
     public long getId() {
         return id;

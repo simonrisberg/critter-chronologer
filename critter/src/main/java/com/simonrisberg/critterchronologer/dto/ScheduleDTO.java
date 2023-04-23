@@ -1,6 +1,6 @@
 package com.simonrisberg.critterchronologer.dto;
 
-import com.simonrisberg.critterchronologer.user.EmployeeSkill;
+import com.simonrisberg.critterchronologer.entity.EmployeeSkill;
 
 import java.time.LocalDate;
 import java.util.List;

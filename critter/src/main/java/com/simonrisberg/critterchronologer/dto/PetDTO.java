@@ -1,6 +1,6 @@
 package com.simonrisberg.critterchronologer.dto;
 
-import com.simonrisberg.critterchronologer.pet.PetType;
+import com.simonrisberg.critterchronologer.entity.PetType;
 
 import java.time.LocalDate;
 
