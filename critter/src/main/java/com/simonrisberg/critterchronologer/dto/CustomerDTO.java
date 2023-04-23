@@ -1,4 +1,4 @@
-package com.simonrisberg.critterchronologer.user;
+package com.simonrisberg.critterchronologer.dto;
 
 import java.util.List;
 

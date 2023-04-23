@@ -1,4 +1,6 @@
-package com.simonrisberg.critterchronologer.user;
+package com.simonrisberg.critterchronologer.dto;
+
+import com.simonrisberg.critterchronologer.user.EmployeeSkill;
 
 import java.time.DayOfWeek;
 import java.util.Set;

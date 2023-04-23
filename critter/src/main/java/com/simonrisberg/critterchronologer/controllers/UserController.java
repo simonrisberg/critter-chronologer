@@ -1,8 +1,8 @@
 package com.simonrisberg.critterchronologer.controllers;
 
-import com.simonrisberg.critterchronologer.user.CustomerDTO;
-import com.simonrisberg.critterchronologer.user.EmployeeDTO;
-import com.simonrisberg.critterchronologer.user.EmployeeRequestDTO;
+import com.simonrisberg.critterchronologer.dto.CustomerDTO;
+import com.simonrisberg.critterchronologer.dto.EmployeeDTO;
+import com.simonrisberg.critterchronologer.dto.EmployeeRequestDTO;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.DayOfWeek;
