@@ -1,8 +1,7 @@
-package com.simonrisberg.jdnd.course3.critter;
+package com.simonrisberg.critterchronologer;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
-import com.simonrisberg.critterchronologer.CritterApplication;
 import com.simonrisberg.critterchronologer.controllers.PetController;
 import com.simonrisberg.critterchronologer.controllers.UserController;
 import com.simonrisberg.critterchronologer.dto.PetDTO;
