@@ -28,7 +28,7 @@ Another SQL database may be used if desired, but do not use the H2 in-memory dat
 1. Clone or download this repository.
 2. Open IntelliJ IDEA.
 3. In IDEA, select `File` -> `Open` and navigate to the `critter` directory within this repository. Select that directory to open.
-4. The project should open in IDEA. In the project structure, navigate to `src/main/java/com.udacity.jdnd.course3.critter`. 
+4. The project should open in IDEA. In the project structure, navigate to `src/main/java/com.simonrisberg.jdnd.course3.critter`. 
 5. Within that directory, click on CritterApplication.java and select `Run` -> `Debug CritterApplication`. 
 6. Open a browser and navigate to the url: [http://localhost:8082/test](http://localhost:8082/test)
 
@@ -38,7 +38,7 @@ You should see the message "Critter Starter installed successfully" in your brow
 
 Once you have completed the above installation, you should also be able to run the included unit tests to verify basic functionality as you complete it. To run unit tests:
 
-1. Within your project in IDEA, Navigate to `src/test/java/com.udacity.jdnd.course3.critter`.
+1. Within your project in IDEA, Navigate to `src/test/java/com.simonrisberg.jdnd.course3.critter`.
 2. Within that directory, click on `CritterFunctionalTest.java` and select `Run` -> `Run CritterFunctionalTest`.
 
 A window should open showing you the test executions. All 9 tests should fail and if you click on them they will show `java.lang.UnsupportedOperationeException` as the cause.
