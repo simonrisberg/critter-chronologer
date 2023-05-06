@@ -15,8 +15,11 @@ public class PetService {
 
     private final PetRepository petRepository;
 
-    public PetService(PetRepository petRepository) {
+    private final CustomerRepository customerRepository;
+
+    public PetService(PetRepository petRepository, CustomerRepository customerRepository) {
         this.petRepository = petRepository;
+        this.customerRepository = customerRepository;
     }
 
     public List<Pet> listPets() {
@@ -25,5 +28,19 @@ public class PetService {
 
     public Pet findPetById(Long id) throws Exception {
         return petRepository.findById(id).orElseThrow(() -> new Exception("Pet was not found"));
+    }
+
+    public List<Pet> listPetsByOwnerId(Long ownerId) {
+        return petRepository.findAllByOwnerId(ownerId);
+    }
+
+    public Pet savePet(Pet pet) {
+        Pet savedPet = petRepository.save(pet);
+
+        Customer owner = savedPet.getOwner();
+        owner.addPet(savedPet);
+        customerRepository.save(owner);
+        return savedPet;
+
     }
 }
